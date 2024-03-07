@@ -6,9 +6,8 @@ if __name__=="__main__":
     logging.info("The execution has started")
 
     try:
-        a = 1/0
+        a = 1
 
     except Exception as e:
         logging.info("Custom Exception")
         raise CustomException(e,sys.exc_info())
-
